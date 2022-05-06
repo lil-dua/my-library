@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/parent2">
+
+    <ImageView
+        android:id="@+id/imageMyLogo"
+        android:layout_width="150dp"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/mylogo2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageMyLogo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/spantaran"
+        android:text="MY LIBRARY"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAllBooks"
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/imageMyLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/spantaran"
+        android:text="Books"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnFavBooks"
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/btnAllBooks"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/spantaran"
+        android:text="Favorite Books"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnAboutMe"
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/btnFavBooks"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/spantaran"
+        android:text="About me"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="550dp"
+        android:fontFamily="@font/mechanismo"
+        android:text="\t\t\t\t\t\t\t\t\t\t\t\t\t\tDesign by ryanhoang \nThis is just a demo app after learned Android React"
+        android:textStyle="italic"
+        android:textSize="12dp"/>
+
+
+</RelativeLayout>

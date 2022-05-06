@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    Background -->
+    <ImageView
+        android:id="@+id/imgBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/black_background" />
+<!--    Avatar-->
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:src="@drawable/box" />
+    <!--    CardView of Avatar-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/cardViewAvatar">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/myavatar" />
+
+    </androidx.cardview.widget.CardView>
+<!--    Text Name-->
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/spantaran"
+        android:text="Hoang Huu Thom"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+<!--    Text Job-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_centerHorizontal="true"
+        android:text="Mobile Developer"
+        android:textStyle="italic" />
+<!--    LinearLayout for information-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textName"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <!--   Address     -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_addr"
+                android:drawablePadding="15dp"
+                android:background="@color/white"
+                android:text="Ha Noi, Viet Nam." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   University   -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="University"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_school"
+                android:drawablePadding="15dp"
+                android:background="@color/white"
+                android:text="Academy of Cryptography Techniques." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   Email    -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="15dp"
+                android:background="@color/white"
+                android:text="huuthom0209@gmail.com." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+<!--    RelativeLayout for Buttons-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="570dp"
+        android:layout_centerHorizontal="true">
+        <!-- Buttons-->
+        <!--    Phone-->
+        <Button
+            android:id="@+id/btnPhone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:paddingTop="12dp"
+            android:drawableTop="@drawable/ic_phone" />
+        <!--    Facebook-->
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnPhone"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/ic_fb"
+            android:paddingTop="12dp" />
+        <!--    Instagram-->
+        <Button
+            android:id="@+id/btnIns"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnFacebook"
+            android:paddingTop="12dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/ic_ins" />
+        <!--    Github-->
+        <Button
+            android:id="@+id/btnGithub"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnIns"
+            android:paddingTop="10dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/ic_github" />
+    </RelativeLayout>
+
+</RelativeLayout>

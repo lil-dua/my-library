@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mylibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mylogo2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mylogo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyLibrary">
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false"
+            android:parentActivityName=".AboutMeActivity"/>
+        <activity
+            android:name=".FavoriteBookActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" /> <!-- Library extend MainActivity -->
+        <activity
+            android:name=".LibraryActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" /> <!-- AboutMe extend MainActivity -->
+        <activity
+            android:name=".AboutMeActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BookActivityLayout"
+            android:exported="false"
+            android:parentActivityName=".LibraryActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

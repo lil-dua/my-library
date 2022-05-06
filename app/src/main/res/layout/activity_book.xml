@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="40dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <Button
+                android:id="@+id/btnAddToFav"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="120dp"
+                android:layout_toRightOf="@id/bookImage"
+                android:text="Add To Favorite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookImage"
+                android:text="Book Name:"
+                android:id="@+id/bookName"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBookName"
+                android:layout_below="@id/bookImage"
+                android:text="book name"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/bookName"/>
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Author:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAuthor"
+                android:layout_below="@id/txtBookName"
+                android:text="author name"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/bookName"/>
+
+            <TextView
+                android:id="@+id/pages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/authorName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Pages:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPages"
+                android:layout_below="@id/txtAuthor"
+                android:text="pages"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/bookName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDescription"
+                android:layout_below="@id/pages"
+                android:text="Description:"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
