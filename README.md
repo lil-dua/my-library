@@ -1,6 +1,5 @@
-# Hello! My name's Ryan, I am a mobile developer.
-# This is my demo app after learned the Android Tutorial!
-# In this app I have 2 portion: my library and my profile.
+# Hello! My name's Ryan, I am a mobile developer. 
+# This is my demo app after learned the Android Tutorial! In this app I have 2 portion: my library and my profile.
 # The first is the component of library:
 
 <img src="https://user-images.githubusercontent.com/66372578/167287354-1035e241-9b8d-4af8-b01a-1db47a152320.png" width="300">
